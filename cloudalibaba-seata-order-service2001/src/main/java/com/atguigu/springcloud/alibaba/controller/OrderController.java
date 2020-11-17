@@ -28,7 +28,9 @@ public class OrderController {
 
     @GetMapping("/order")
     public String getOrder(){
-
+        System.out.print("------------------");
+        System.out.print("jlkasjdkasjlksadkljsalk");
+        System.out.print("------------------");
         return "55555";
     }
 
