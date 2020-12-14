@@ -32,7 +32,7 @@ public class OrderControllerTest extends BaseTest{
     @Test
     public void createOrder() throws IOException {
         String url = baseUrl + "/order/create?";
-        String paramStr = "userId=1&productId=1&count=10&money=100";
+        String paramStr = "userId=1&productId=1&count=10&money=60";
         //进行签名
         this.httpGet(url+paramStr);
     }

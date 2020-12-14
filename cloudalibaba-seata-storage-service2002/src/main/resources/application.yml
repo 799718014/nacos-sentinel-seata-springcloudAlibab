@@ -50,7 +50,17 @@ logging:
     io:
       seata: info
 
-mybatis:
-  mapperLocations: classpath:mapper/*.xml
+#mybatis:
+#  mapperLocations: classpath:mapper/*.xml
 
+  #mybatis 配置
+mybatis:
+  #config-locations:
+  #classpath: mybatis/mybatis-config.xml
+  mapperLocations: com/atguigu/springcloud/alibaba/dao/xml/*.xml
+  mapper-locations[0]:
+    classpath: com/atguigu/springcloud/alibaba/dao/xml/*.xml
+  type-aliases-package: com.atguigu.springcloud.alibaba.dao.mapper
+  configuration:
+    map-underscore-to-camel-case: true
 
